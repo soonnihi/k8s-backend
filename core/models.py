@@ -7,12 +7,6 @@
 # Feel free to rename the models, but don't rename db_table values or field names.
 from django.db import models
 
-class ExampleModel(models.Model):
-    name = models.CharField(max_length=100)
-
-    def __str__(self):
-        return self.name
-
 class AuthGroup(models.Model):
     name = models.CharField(unique=True, max_length=150)
 
